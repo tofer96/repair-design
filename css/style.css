@@ -604,3 +604,14 @@ img {
   background-color: #E3B873;
   color: #ffffff;
   padding: 1.214rem 2.6rem; }
+
+.design__content {
+  max-width: 52rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2.85rem; }
+
+.design__text {
+  font-family: 'Futura Book';
+  font-size: 1.42rem;
+  text-align: center; }
