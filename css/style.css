@@ -517,6 +517,18 @@ img {
   .nav__item {
     margin-right: 1.3rem; } }
 
+@media screen and (max-width: 1025px) {
+  .card__text {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 890px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 5rem;
+    margin-left: 0 auto; } }
+
 @media screen and (max-width: 992px) {
   .nav {
     display: none; }
@@ -525,6 +537,39 @@ img {
   .hero__content {
     margin-left: 0; } }
 
+@media screen and (max-width: 720px) {
+  .hero__button {
+    margin-bottom: 2rem; } }
+
+@media screen and (max-width: 670px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 5rem;
+    margin-left: 0; }
+  .card__text {
+    margin: 0 auto; }
+  .section-design {
+    background-color: #131313; }
+  .section-title {
+    color: #ffffff; }
+  .hero__content {
+    max-width: 330px; }
+  .hero__text {
+    max-width: 320px;
+    margin-top: 1.42rem;
+    line-height: 1.5rem; }
+  .hero__title {
+    line-height: 132%; }
+  .design__text {
+    color: #ffffff; } }
+
+@media screen and (max-height: 580px) {
+  .hero__scroll-down {
+    display: none;
+    font-size: 0.85rem; } }
+
 @media screen and (max-width: 570px) {
   .row {
     flex-direction: column;
@@ -532,7 +577,7 @@ img {
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
-    margin-left: 0; }
+    margin-left: 0 auto; }
   .contacts__phone {
     margin-right: 0;
     color: #ffffff;
@@ -557,35 +602,6 @@ img {
 @media screen and (max-width: 520px) {
   .hero__scroll-down {
     display: none; } }
-
-@media screen and (max-height: 580px) {
-  .hero__scroll-down {
-    display: none;
-    font-size: 0.85rem; } }
-
-@media screen and (max-width: 640px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
-  .types__card {
-    margin-bottom: 5rem;
-    margin-left: 0; }
-  .card__text {
-    margin: 0 auto; }
-  .section-design {
-    background-color: #131313; }
-  .section-title {
-    color: #ffffff; }
-  .hero__content {
-    max-width: 330px; }
-  .hero__text {
-    max-width: 320px;
-    margin-top: 1.42rem;
-    line-height: 1.5rem; }
-  .hero__title {
-    line-height: 132%; }
-  .design__text {
-    color: #ffffff; } }
 
 .types__section-title {
   margin-bottom: 2rem; }
