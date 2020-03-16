@@ -719,7 +719,13 @@ img {
   .hero__title {
     line-height: 132%; }
   .design__text {
-    color: #ffffff; } }
+    color: #ffffff; }
+  .modal__dialog {
+    margin: 20px 20px; } }
+
+@media screen and (min-height: 670px) {
+  .modal__dialog {
+    margin: 20px 20px; } }
 
 @media screen and (max-height: 580px) {
   .hero__scroll-down {
