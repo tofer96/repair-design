@@ -44,6 +44,9 @@
         &-slide
             &__value
                 line-height: 135.84%
+    .control
+        &__section-title
+            width: 100%
     .swiper
         &-slide
             img
@@ -56,13 +59,31 @@
     .col-50
         width: 100%
     .section
+        &__dark
+            background-color: $dark
+            color: $light
         &-title
             &__word
                 &::after
                     display: none
+            &__heading
+                // color: $light
+    .design
+        &__section-title
+            color: $light
         &-slide
             &__value
                 line-height: 135.84%
+    .control
+        &__form
+            flex-direction: column
+            min-height: 24.2857rem
+        .button
+            &__primary
+                order: 3
+    .policy
+        &__label
+            position: absolute
 @media screen and ( max-width: 670px )
     .row
         flex-direction: column

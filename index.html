@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="menu">
-                <div class="logo menu__logo">Repair Design Project</div>
-                <nav class="nav menu__nav">
+                <div class="logo menu__logo wow fadeInLeft">Repair Design Project</div>
+                <nav class="nav menu__nav wow fadeInRight">
                     <a href="#" class="nav__item">Главная</a>
                     <a href="#" class="nav__item">Проекты</a>
                     <a href="#" class="nav__item">Замер</a>
@@ -21,7 +23,7 @@
                     <a href="#" class="nav__item">Отзывы</a>
                     <a href="#" class="nav__item">Контакты</a>
                 </nav>
-                <div class="contacts menu__contacts">
+                <div class="contacts menu__contacts wow fadeInRight">
                     <a href="tel:+79997683299" class="phone contacts__phone">+7(999) 768-32-99</a>
                     <button class="button contacts__button button__primary" data-toggle="modal">Заказать звонок</button>
                 </div>
@@ -37,22 +39,22 @@
             </div>
             <div class="container">
                 <div class="hero__content">
-                    <h1 class="title hero__title">Турецкий ремонт в&nbsp;<span class="title__primary">Ростове-на-Дону</span></h1>
-                    <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
-                    <button class="button hero__button button__primary" data-toggle="modal">Рассчитать стоимость</button>
-                    <button class="button hero__button button__outline">Отправить заявку</button>
+                    <h1 class="title hero__title wow slideInDown">Турецкий ремонт в&nbsp;<span class="title__primary">Ростове-на-Дону</span></h1>
+                    <p class="hero__text wow lightSpeedIn">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
+                    <button class="button hero__button button__primary wow rotateIn" data-toggle="modal">Рассчитать стоимость</button>
+                    <button class="button hero__button button__outline wow rotateIn">Отправить заявку</button>
                 </div>
                 <!-- /.hero__content -->
             </div>
             <!-- /.container -->
-            <a href="#" class="hero__scroll-down">Листайте вниз</a>
+            <a href="#" class="hero__scroll-down wow bounce pulse infinite" data-wow-iteration="2" data-wow-delay="6s">Листайте вниз</a>
         </section>
         <!-- /.hero -->
         <section class="section section--dark project">
             <div class="container">
                 <div class="row">
                     <div class="col-50">
-                    <div class="section-title--left">
+                    <div class="section-title--left wow fadeInUp" data-wow-delay="0.6s">
                         <h2 class="section-title__heading--primary">Завершённые <span class="section-title__word">проекты</span></h2>
                         <!-- /.section-title__heading -->
                         <p class="section-title__text">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей</p>
@@ -63,7 +65,7 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper swiper-no-swiping">
                         <!-- Slides -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide wow fadeInRight" data-wow-delay="1.5s">
                             <div class="swiper-slide__text">
                                 <h3 class="swiper-slide__heading">Город</h3>
                                 <span class="swiper-slide__value">Ростов-на-Дону</span><br>
@@ -92,9 +94,9 @@
                     </div>
 
                     <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev wow fadeInRight" data-wow-delay="1.5s" ></div>
+                    <div class="swiper-pagination wow fadeInRight" data-wow-delay="1.5s"></div>
+                    <div class="swiper-button-next wow fadeInRight" data-wow-delay="1.5s"></div>
                 </div>
                     </div>
                     <!-- /.col-50 -->
@@ -102,7 +104,7 @@
                         <!-- Slider main container -->
                         <div class="swiper-container">
                             <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper swiper-no-swiping">
+                            <div class="swiper-wrapper swiper-no-swiping wow bounceInRight" data-wow-delay="1.5s">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
                                     <img src="image/project.jpg" alt="">
@@ -122,9 +124,9 @@
             </div>
         </section>
         <!-- /.section section--dark project -->
-        <section class="section control">
+        <section class="section control section__dark">
             <div class="container">
-                <div class="section-title">
+                <div class="section-title control__section-title section-title--light wow fadeInUp" data-wow-delay="1.2s">
                     <h2 class="section-title__heading">Онлайн контроль</h2>
                     <!-- /.section-title__heading -->
                     <div class="section-title__image">
@@ -133,13 +135,41 @@
                     <!-- /.section-title__image -->
                 </div>
                 <!-- /.section-title -->
+                <div class="control__video video wow zoomIn" data-wow-delay="1s">
+                    <img src="image/play-icon.svg" alt="play icon" class="video__play">
+                </div>
+                <!-- /.control__video video -->
+                <p class="control__text  wow zoomIn">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже, чтобы получить ссылку на трансляцию.</p>
+                <form action="#" class="form control__form wow rotateInDownLeft" data-wow-delay="0.9s">
+                    <div class="control__input-group">
+                        <label for="user-name" class="label form__label label--dark control__label">Имя</label>
+                    <!-- /.label form__label -->
+                    <input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+                    </div>
+
+                    <div class="control__input-group">
+                        <label for="user-phone" class="label form__label label--dark control__label">Телефон</label>
+                    <!-- /.label form__label -->
+                    <input type="tel" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+                    </div>
+                    <!-- /.input-group -->
+                    <!-- /.input-group -->
+                    <button class="button button__primary control__button">Отправить</button>
+                        <div class="policy control__policy">
+                            <input type="checkbox" name="policy-checkbox" id="policy-checkbox"
+                            class="policy__checkbox" checked>
+                            <label for="policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
+                        </div>
+                        <!-- /.policy -->
+                </form>
+                <!-- /.form control__form -->
             </div>
             <!-- /.container -->
         </section>
         <!-- /.section control -->
         <section class="section-types">
             <div class="container">
-                <div class="section-title types__section-title">
+                <div class="section-title types__section-title wow fadeInUp" data-wow-delay="1.2s">
                     <h2 class="section-title__heading">Виды ремонта</h2>
                     <!-- /.section-title__heading -->
                     <div class="section-title__image">
@@ -151,11 +181,11 @@
                 <div class="row">
                     <div class="col-30">
                         <div class="card types__card">
-                            <img src="image/types/type-3.jpg" alt="Косметический ремонт" class="card__image">
-                            <div class="card__text">
+                            <img src="image/types/type-3.jpg" alt="Косметический ремонт" class="card__image  wow rotateInDownLeft" data-wow-delay="1.4s">
+                            <div class="card__text wow rotateInDownLeft" data-wow-delay="1.4s">
                                 <h3 class="card__title">Косметический ремонт</h3>
                                 <!-- /.card__title -->
-                                <ul class="card__list">
+                                <ul class="card__list wow rotateInDownLeft" data-wow-delay="1.4s">
                                     <li class="card__item">Демонтаж старых покрытий</li>
                                     <!-- /.card__item -->
                                     <li class="card__item">Поклейка обоев</li>
@@ -172,7 +202,7 @@
                                     <!-- /.card__item -->
                                 </ul>
                                 <!-- /.card__list -->
-                                <strong class="card__pricetag">
+                                <strong class="card__pricetag wow rotateInDownLeft" data-wow-delay="1.4s">
                                     от 900 руб / м<sup>2</sup>
                                 </strong>
                             </div>
@@ -182,11 +212,11 @@
                     </div>
                     <div class="col-30">
                         <div class="card types__card">
-                            <img src="image/types/type-2.jpg" alt="Капитальный ремонт" class="card__image">
+                            <img src="image/types/type-2.jpg" alt="Капитальный ремонт" class="card__image wow rotateInUpRight" data-wow-delay="1.4s">
                             <div class="card__text">
-                                <h3 class="card__title">Капитальный ремонт</h3>
+                                <h3 class="card__title wow rotateInUpRight" data-wow-delay="1.4s">Капитальный ремонт</h3>
                                 <!-- /.card__title -->
-                                <ul class="card__list">
+                                <ul class="card__list wow rotateInUpRight" data-wow-delay="1.4s">
                                     <li class="card__item">Демонтаж старых покрытий</li>
                                     <!-- /.card__item -->
                                     <li class="card__item">Поклейка обоев</li>
@@ -203,7 +233,7 @@
                                     <!-- /.card__item -->
                                 </ul>
                                 <!-- /.card__list -->
-                                <strong class="card__pricetag">
+                                <strong class="card__pricetag wow rotateInUpRight" data-wow-delay="1.4s">
                                     от 1800 руб / м<sup>2</sup>
                                 </strong>
                             </div>
@@ -212,11 +242,11 @@
                     </div>
                     <div class="col-30">
                         <div class="card types__card">
-                            <img src="image/types/type-1.jpg" alt="Дизайнерский ремонт" class="card__image">
-                            <div class="card__text">
+                            <img src="image/types/type-1.jpg " alt="Дизайнерский ремонт" class="card__image wow rotateInDownRight " data-wow-delay="1.4s">
+                            <div class="card__text wow rotateInDownRight " data-wow-delay="1.4s">
                                 <h3 class="card__title">Дизайнерский ремонт</h3>
                                 <!-- /.card__title -->
-                                <ul class="card__list">
+                                <ul class="card__list wow rotateInDownRight " data-wow-delay="1.4s">
                                     <li class="card__item">Демонтаж старых покрытий</li>
                                     <!-- /.card__item -->
                                     <li class="card__item">Поклейка обоев</li>
@@ -233,7 +263,7 @@
                                     <!-- /.card__item -->
                                 </ul>
                                 <!-- /.card__list -->
-                                <strong class="card__pricetag">
+                                <strong class="card__pricetag wow rotateInDownRight " data-wow-delay="1.4s">
                                     от 4000 руб / м<sup>2</sup>
                                 </strong>
                             </div>
@@ -246,7 +276,7 @@
         </section>
         <section class="section-design">
             <div class="container">
-                <div class="section-title design__section-title">
+                <div class="section-title design__section-title wow fadeInUp" data-wow-delay="1.2s">
                     <h2 class="section-title__heading">Дизайн проект</h2>
                     <div class="section-title__image">
                         <img src="image/design.svg" alt="design">
@@ -259,7 +289,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="card types__card">
+                        <div class="card types__card wow rotateInDownLeft" data-wow-delay="1.4s">
                             <img src="image/types/type-3.jpg" alt="Минимальный" class="card__image">
                             <div class="card__text">
                                 <h3 class="card__title">Минимальный</h3>
@@ -275,7 +305,7 @@
                                     <!-- /.card__item -->
                                 </ul>
                                 <!-- /.card__list -->
-                                <strong class="card__pricetag">
+                                <strong class="card__pricetag wow rotateInDownLeft" data-wow-delay="1.4s">
                                     150 руб / м<sup>2</sup>
                                 </strong>
                             </div>
@@ -284,7 +314,7 @@
                         <!-- /.card -->
                     </div>
                     <div class="col">
-                        <div class="card types__card">
+                        <div class="card types__card wow rotateInUpRight" data-wow-delay="1.4s">
                             <img src="image/types/type-1.jpg" alt="Стандартный" class="card__image">
                             <div class="card__text">
                                 <h3 class="card__title">Стандартный</h3>
@@ -306,7 +336,7 @@
                                     <!-- /.card__item -->
                                 </ul>
                                 <!-- /.card__list -->
-                                <strong class="card__pricetag">
+                                <strong class="card__pricetag wow rotateInUpRight" data-wow-delay="1.4s">
                                     400 руб / м<sup>2</sup>
                                 </strong>
                             </div>
@@ -314,7 +344,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card types__card">
+                        <div class="card types__card wow rotateInDownRight " data-wow-delay="1.4s">
                             <img src="image/types/type-4.jpg" alt="Полный" class="card__image">
                             <div class="card__text">
                                 <h3 class="card__title">Полный</h3>
@@ -346,7 +376,7 @@
                                     <!-- /.card__item -->
                                 </ul>
                                 <!-- /.card__list -->
-                                <strong class="card__pricetag">
+                                <strong class="card__pricetag wow rotateInDownRight " data-wow-delay="1.4s">
                                     900 руб / м<sup>2</sup>
                                 </strong>
                             </div>
@@ -362,13 +392,13 @@
             <form action="#" class="form modal__form">
                 <label for="user-name" class="label form__label label--light">Имя</label>
                 <!-- /.label form__label -->
-                <input type="text" class="input form__input modal__input" id="user-name" placeholder="Как вас зовут:">
+                <input type="text" class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
                 <label for="user-phone" class="label form__label label--light">Телефон</label>
                 <!-- /.label form__label -->
-                <input type="tel" class="input form__input modal__input" id="user-phone" placeholder="Ваш телефон:">
+                <input type="tel" class="input form__input modal__input input--light" id="user-phone" placeholder="Ваш телефон:">
                 <label for="user-email" class="label form__label label--light">Email</label>
                 <!-- /.label form__label -->
-                <input type="email" class="input form__input modal__input" id="user-email" placeholder="Ваш email:">
+                <input type="email" class="input form__input modal__input input--light" id="user-email" placeholder="Ваш email:">
                 <div class="policy modal__policy">
                     <input type="checkbox" name="policy-checkbox" id="policy-checkbox"
                     class="policy__checkbox" checked>
@@ -384,6 +414,7 @@
     <!-- /.modal -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
