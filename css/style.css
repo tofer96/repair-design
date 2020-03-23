@@ -763,7 +763,9 @@ img {
   .hero__content {
     margin-left: 0; }
   .card__title {
-    min-height: 3rem; } }
+    min-height: 3rem; }
+  .swiper-container {
+    margin-bottom: 2.42rem; } }
 
 @media screen and (max-width: 890px) {
   .row {
@@ -775,7 +777,13 @@ img {
 
 @media screen and (max-width: 720px) {
   .hero__button {
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem; }
+  .col-50 {
+    width: 100%; }
+  .section-title__word::after {
+    display: none; }
+  .section-slide__value {
+    line-height: 135.84%; } }
 
 @media screen and (max-width: 670px) {
   .row {
