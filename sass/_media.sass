@@ -22,6 +22,10 @@
     .swiper
         &-container
             margin-bottom: 2.42rem
+            width: 100%
+        &-slide
+            img
+                width: 100%
 @media screen and ( max-width: 890px )
     .row
         flex-direction: column
@@ -30,6 +34,21 @@
         &__card
             margin-bottom: 5rem
             margin-left: 0 
+    .col-50
+        width: 100%
+    .section
+        &-title
+            &__word
+                &::after
+                    display: none
+        &-slide
+            &__value
+                line-height: 135.84%
+    .swiper
+        &-slide
+            img
+                width: 100%
+
 @media screen and ( max-width: 720px )
     .hero
         &__button
@@ -41,7 +60,6 @@
             &__word
                 &::after
                     display: none
-
         &-slide
             &__value
                 line-height: 135.84%

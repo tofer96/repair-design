@@ -765,7 +765,10 @@ img {
   .card__title {
     min-height: 3rem; }
   .swiper-container {
-    margin-bottom: 2.42rem; } }
+    margin-bottom: 2.42rem;
+    width: 100%; }
+  .swiper-slide img {
+    width: 100%; } }
 
 @media screen and (max-width: 890px) {
   .row {
@@ -773,7 +776,15 @@ img {
     align-items: center; }
   .types__card {
     margin-bottom: 5rem;
-    margin-left: 0; } }
+    margin-left: 0; }
+  .col-50 {
+    width: 100%; }
+  .section-title__word::after {
+    display: none; }
+  .section-slide__value {
+    line-height: 135.84%; }
+  .swiper-slide img {
+    width: 100%; } }
 
 @media screen and (max-width: 720px) {
   .hero__button {
