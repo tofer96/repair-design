@@ -344,7 +344,7 @@ template {
   font-family: 'Yeseva One', cursive; }
 
 .label {
-  font-size: 1.07rem; }
+  font-size: 1.142rem; }
   .label--light {
     color: rgba(255, 255, 255, 0.5); }
 
@@ -383,6 +383,8 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+  .policy__label--center {
+    justify-content: center; }
 
 .container {
   width: 85%;
@@ -748,8 +750,7 @@ img {
 .design__content {
   max-width: 52rem;
   margin: 0 auto;
-  margin-top: 2rem;
-  margin-bottom: 2.85rem; }
+  margin-top: 2rem; }
 
 .design__text {
   font-family: 'Futura Book';
@@ -758,11 +759,58 @@ img {
 
 .section-design {
   margin-top: 4.28rem;
-  margin-bottom: 4.28rem; }
+  margin-bottom: 30rem; }
 
-.design__section-title {
-  color: #131313;
-  margin-top: 4.28rem; }
+.design {
+  padding-bottom: 30rem; }
+  .design__section-title {
+    color: #131313;
+    margin-top: 4.28rem; }
+
+.footer {
+  background: #131313 url("../image/footer-bg.jpg") no-repeat center/cover;
+  padding-top: 3rem; }
+  .footer__wrap {
+    background-color: #181818;
+    max-width: 63.07rem;
+    margin: auto;
+    margin-top: -20rem;
+    margin-bottom: 3.714rem;
+    padding: 2.5rem; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 1.428rem;
+    text-align: center;
+    margin-bottom: 3.214rem;
+    margin-top: 0; }
+  .footer__form {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 37.142rem;
+    margin: auto; }
+  .footer__input {
+    padding-top: 0.3rem; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 3.2rem; }
+      .footer__input-group--full-width {
+        flex-basis: 100%;
+        margin-bottom: 2rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 2rem; }
+  .footer__button {
+    margin: auto;
+    padding: 1.285rem 4.785rem; }
+  .footer__menu {
+    background-color: #131313;
+    padding: 4.285rem 0; }
 
 .modal {
   opacity: 0;
