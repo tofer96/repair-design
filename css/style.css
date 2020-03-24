@@ -386,6 +386,12 @@ template {
   .policy__label--center {
     justify-content: center; }
 
+em.invalid {
+  color: tomato; }
+
+input.invalid {
+  border-bottom: 1px solid tomato; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -689,7 +695,8 @@ img {
   max-width: 55rem;
   margin: auto; }
 
-.control__input-group {
+.control__input {
+  color: #131313;
   display: flex;
   flex-direction: column;
   flex-basis: 30%; }
@@ -768,7 +775,7 @@ img {
     margin-top: 4.28rem; }
 
 .footer {
-  background: #131313 url("../image/footer-bg.jpg") no-repeat center/cover;
+  background: url("../image/footer-bg.jpg") no-repeat center/cover;
   padding-top: 3rem; }
   .footer__wrap {
     background-color: #181818;
@@ -854,10 +861,12 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.428rem; }
-    .modal__input:last-of-type {
-      margin-bottom: 1rem; }
+  .modal__input:last-of-type {
+    margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
@@ -886,7 +895,9 @@ img {
     margin-bottom: 2.42rem;
     width: 100%; }
   .swiper-slide img {
-    width: 100%; } }
+    width: 100%; }
+  .footer {
+    background-color: #131313; } }
 
 @media screen and (max-width: 890px) {
   .row {

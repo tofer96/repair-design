@@ -54,6 +54,7 @@ $(document).ready(function(){
     bullets.css('left', prev.width() +22);
     
     new WOW().init();
+    //Валидация формы
 
     $('.modal__form').validate ({
         rules: {
@@ -64,8 +65,8 @@ $(document).ready(function(){
             },
             userPhone: "required",
             userEmail: {
-              required: true,
-              email: true
+              required: true, 
+              email: true 
             }
           },
             errorElement: "em",
