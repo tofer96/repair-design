@@ -171,7 +171,7 @@ $(document).ready(function(){
     });
     
     // Маска для телефона 
-    $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
+    $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) __-__-___"});
     // Яндекс карты
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
