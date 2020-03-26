@@ -55,14 +55,15 @@
                 width: 100%
 @media screen and (max-width: 760px)
     .footer
-        display: flex
-        flex-wrap: wrap
         &__wrap
             margin: 0 auto
             &--responsive 
-                background-color: $dark
-                padding-top: 4rem
+                display: flex
+                flex-wrap: wrap
                 justify-content: center
+                padding-top: 6rem
+        &__title
+            margin-bottom: 3.214rem
         &__icon
             order: 2
         &__form
@@ -72,6 +73,14 @@
             width: 100%
             margin: auto
             margin-top: 1.285rem
+        &__img
+            &__margin
+                margin-right: 1.1rem
+    .control
+        &__input
+            width: 100%
+            display: flex
+            color: $light
 @media screen and ( max-width: 720px )
     .hero
         &__button
@@ -109,8 +118,6 @@
         background-color: $dark
         &__content
             flex-direction: column
-        &__map
-            order: 5
         &__text
             flex-direction: column 
         &__menu

@@ -702,7 +702,9 @@ img {
   flex-basis: 30%; }
 
 .control__button {
-  padding: 1.2857rem 4.7857rem; }
+  padding: 1.2857rem 4.7857rem;
+  background-color: #E3B873;
+  color: #ffffff; }
 
 .control__label {
   margin-bottom: -7px; }
@@ -778,7 +780,6 @@ img {
   background: url("../image/footer-bg.jpg") no-repeat center/cover;
   padding-top: 3rem;
   max-width: 100%;
-  margin-right: 20px;
   padding-top: 18px; }
   .footer__wrap {
     background-color: #181818;
@@ -949,24 +950,30 @@ img {
     width: 100%; } }
 
 @media screen and (max-width: 760px) {
-  .footer {
+  .footer__wrap {
+    margin: 0 auto; }
+    .footer__wrap--responsive {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 6rem; }
+  .footer__title {
+    margin-bottom: 3.214rem; }
+  .footer__icon {
+    order: 2; }
+  .footer__form {
+    flex-direction: column;
+    min-height: 24.2857rem; }
+  .footer__button {
+    width: 100%;
+    margin: auto;
+    margin-top: 1.285rem; }
+  .footer__img__margin {
+    margin-right: 1.1rem; }
+  .control__input {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap; }
-    .footer__wrap {
-      margin: 0 auto; }
-      .footer__wrap--responsive {
-        background-color: #131313;
-        padding-top: 4rem;
-        justify-content: center; }
-    .footer__icon {
-      order: 2; }
-    .footer__form {
-      flex-direction: column;
-      min-height: 24.2857rem; }
-    .footer__button {
-      width: 100%;
-      margin: auto;
-      margin-top: 1.285rem; } }
+    color: #ffffff; } }
 
 @media screen and (max-width: 720px) {
   .hero__button {
@@ -994,8 +1001,6 @@ img {
     background-color: #131313; }
     .footer__content {
       flex-direction: column; }
-    .footer__map {
-      order: 5; }
     .footer__text {
       flex-direction: column; }
     .footer__menu {

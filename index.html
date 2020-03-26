@@ -140,25 +140,25 @@
                 </div>
                 <!-- /.control__video video -->
                 <p class="control__text  wow zoomIn">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже, чтобы получить ссылку на трансляцию.</p>
-                <form action="#" class="form control__form wow rotateInDownLeft" data-wow-delay="0.9s">
-                    <div class="control__input-group">
-                        <label for="user-name" class="label form__label label--dark control__label">Имя</label>
+                <form action="send.php" method="POST" class="form control__form wow rotateInDownLeft" data-wow-delay="0.9s">
+                    <div class="input-group control__input-group">
+                        <label for="user-name" class="label form__label control__label">Имя</label>
                     <!-- /.label form__label -->
-                    <input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+                    <input type="text" name="userName" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
                     </div>
 
                     <div class="control__input-group">
-                        <label for="user-phone" class="label form__label label--dark control__label">Телефон</label>
+                        <label for="user-phone" name="user-phone" class="label form__label control__label">Телефон</label>
                     <!-- /.label form__label -->
-                    <input type="tel" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+                    <input type="tel" name="userPhone" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
                     </div>
                     <!-- /.input-group -->
                     <!-- /.input-group -->
                     <button class="button button__primary control__button">Отправить</button>
                         <div class="policy control__policy">
-                            <input type="checkbox" name="policy-checkbox" id="policy-checkbox"
+                            <input type="checkbox" name="control__policy__checkbox" id="control__policy__checkbox"
                             class="policy__checkbox" checked>
-                            <label for="policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
+                            <label for="control__policy__checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
                         </div>
                         <!-- /.policy -->
                 </form>
@@ -420,9 +420,10 @@
                     <img class="footer__img__margin" src="image/message.png" alt="">
                     <img src="image/instagramm.png" alt="">
                 </div>
-            </div>
-            <div class="map footer__map">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa5ea9cfd6786153f2b01c07c26b5163ea2b9d6b5397a7093cdca65f72d39daff&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false"></script>
+
+                <div class="map footer__map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa5ea9cfd6786153f2b01c07c26b5163ea2b9d6b5397a7093cdca65f72d39daff&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false"></script>
+                </div>
             </div>
         </div>
         <!-- /.container -->
