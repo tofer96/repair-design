@@ -83,6 +83,7 @@ $(document).ready(function(){
               email: "введите в формате: name@domain.com"
             }
           },
+          
         submitHandler: function(form) {
             $.ajax({
                 type: "POST",
